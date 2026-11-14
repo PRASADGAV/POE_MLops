@@ -59,6 +59,11 @@ def log_experiment(
             name="california_housing_price_classifier",
             signature=signature,
             input_example=X_train.head(3),
+            skops_trusted_types=[
+                "sklearn.tree._tree.Tree",
+                "sklearn.tree._classes.DecisionTreeClassifier",
+                "sklearn.ensemble._forest.RandomForestClassifier",
+            ],
         )
         for artifact in (report_path, metrics_path, predictions_path):
             mlflow.log_artifact(str(artifact))
