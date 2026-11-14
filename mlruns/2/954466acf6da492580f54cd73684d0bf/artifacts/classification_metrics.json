@@ -1,0 +1,21 @@
+{
+  "accuracy": 0.8825096899224806,
+  "precision": 0.8871845620979713,
+  "recall": 0.8746341463414634,
+  "f1_score": 0.8808646524195529,
+  "confusion_matrix_labels_0_1": [
+    [
+      1850,
+      228
+    ],
+    [
+      257,
+      1793
+    ]
+  ],
+  "price_threshold_MedHouseVal": 1.7985,
+  "interpretation": {
+    "0": "lower-price district (MedHouseVal below training median)",
+    "1": "higher-price district (MedHouseVal at or above training median)"
+  }
+}

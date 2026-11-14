@@ -1,0 +1,17 @@
+ML DEVOPS POE - START HERE
+
+1. Extract this ZIP.
+2. Install Python 3.11 (recommended).
+3. Double-click setup_windows.bat once.
+4. Double-click run_windows.bat.
+5. Open outputs/evidently_carshare_data_drift.html in your browser.
+6. Run start_mlflow_ui.bat and visit http://127.0.0.1:5000.
+
+Dataset: Plotly built-in px.data.carshare() - no separate CSV download.
+Tools: Pytest + MLflow + Evidently.
+
+Read README.md for the full implementation and VIVA_QUICK_NOTES.md for revision.
+The PDF viva guide is included in this ZIP and also provided separately.
+
+NOTE: First-time Python package installation requires internet. The dataset itself is bundled with Plotly.
+The Evidently current batch is deliberately synthetic; explain it honestly as a drift simulation.

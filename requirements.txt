@@ -1,0 +1,23 @@
+# Recommended: Python 3.11 or 3.12
+
+# Data & ML
+numpy>=1.26,<3
+pandas>=2.0,<3
+scikit-learn>=1.4,<2
+
+# Visualisation (dataset bundled here)
+plotly>=5.20,<7
+
+# Experiment tracking
+mlflow>=3.0,<4
+
+# Data drift monitoring
+evidently==0.7.19
+
+# API
+fastapi>=0.115,<1
+uvicorn>=0.31,<1
+
+# Testing
+pytest>=8,<10
+httpx>=0.27,<1

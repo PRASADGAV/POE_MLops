@@ -1,0 +1,27 @@
+# Virtual environments
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.hypothesis/
+
+# MLflow
+mlflow.db
+mlartifacts/
+
+# Generated outputs (keep folder, ignore files)
+outputs/*.json
+outputs/*.csv
+outputs/*.html
+outputs/*.png
+outputs/*.xml
+
+# IDE
+.vscode/
+*.code-workspace
+
+# OS
+.DS_Store
+Thumbs.db
