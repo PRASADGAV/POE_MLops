@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        PYTHON     = 'python'
-        PIP        = 'python -m pip'
+        PYTHON     = 'C:\\Users\\prasa\\AppData\\Local\\Programs\\Python\\Python311\\python.exe'
+        PIP        = 'C:\\Users\\prasa\\AppData\\Local\\Programs\\Python\\Python311\\python.exe -m pip'
         VENV_DIR   = '.venv'
         OUTPUT_DIR = 'outputs'
     }
@@ -21,7 +21,7 @@ pipeline {
             steps {
                 echo '--- Creating virtual environment and installing dependencies ---'
                 bat """
-                    ${PYTHON} -m venv ${VENV_DIR}
+                    "${PYTHON}" -m venv ${VENV_DIR}
                     ${VENV_DIR}\\Scripts\\python.exe -m pip install --upgrade pip
                     ${VENV_DIR}\\Scripts\\pip.exe install -r requirements.txt
                 """
